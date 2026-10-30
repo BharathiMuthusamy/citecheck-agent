@@ -8,15 +8,15 @@ version = "0.1.0"
 description = "A local research assistant for citation-faithfulness experiments"
 requires-python = ">=3.11"
 dependencies = [
-    "ollama",
-    "ddgs",
-    "requests",
-    "beautifulsoup4",
-    "numpy",
-    "pydantic>=2,<3",
-    "streamlit",
-    "pandas",
-    "matplotlib",
+    "ollama==0.6.3",
+    "ddgs==9.16.0",
+    "requests==2.34.2",
+    "beautifulsoup4==4.15.0",
+    "numpy==2.4.6",
+    "pydantic==2.14.1",
+    "streamlit==1.66.1",
+    "pandas==3.1.0",
+    "matplotlib==3.11.2",
 ]
 
 [tool.setuptools.packages.find]

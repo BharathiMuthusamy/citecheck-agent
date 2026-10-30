@@ -1,0 +1,20 @@
+services:
+  citecheck:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      OLLAMA_HOST: http://host.docker.internal:11434
+      CITECHECK_MODEL: ${CITECHECK_MODEL:-qwen2.5:3b}
+      CITECHECK_EMBED_MODEL: ${CITECHECK_EMBED_MODEL:-nomic-embed-text}
+      CITECHECK_TRACE_PATH: /app/traces/agent.jsonl
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - citecheck-traces:/app/traces
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  citecheck-traces:

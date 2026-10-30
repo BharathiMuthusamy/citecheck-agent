@@ -65,7 +65,20 @@ ruff check .
 
 ## Docker
 
-Build with `docker build -t citecheck .` and run Streamlit with the Ollama host made reachable inside the container. On Docker Desktop, set `OLLAMA_HOST=http://host.docker.internal:11434` for the client and ensure the Ollama service accepts connections from Docker. Search and page retrieval also require container network access.
+Install and pull the models on the host first:
+
+```powershell
+ollama pull qwen2.5:3b
+ollama pull nomic-embed-text
+```
+
+Then start the container with Docker Compose:
+
+```powershell
+docker compose up --build
+```
+
+The UI binds to `127.0.0.1:8501`; Ollama stays on the host and is reached through `host.docker.internal`. Traces persist in a named volume. Search and source fetching still need outbound internet access. The image runs as a non-root user and has a Streamlit health check. For a different model, set `CITECHECK_MODEL` or `CITECHECK_EMBED_MODEL` before starting Compose.
 
 ## Safety and limitations
 
