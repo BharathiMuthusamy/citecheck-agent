@@ -1,0 +1,1 @@
+"""CiteCheck research agent package."""

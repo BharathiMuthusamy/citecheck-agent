@@ -1,0 +1,25 @@
+# Python environments and generated files
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local traces and experiment outputs
+traces/
+results/
+*.log
+
+# Stray typo file; keep the real GitHub workflows directory
+.githuhb

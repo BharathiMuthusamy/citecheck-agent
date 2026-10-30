@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citecheck-agent"
+version = "0.1.0"
+description = "A local research assistant for citation-faithfulness experiments"
+requires-python = ">=3.11"
+dependencies = [
+    "ollama",
+    "ddgs",
+    "requests",
+    "beautifulsoup4",
+    "numpy",
+    "pydantic>=2,<3",
+    "streamlit",
+    "pandas",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+include = ["citecheck*", "eval*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

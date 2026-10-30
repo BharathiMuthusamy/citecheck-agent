@@ -1,0 +1,50 @@
+{"id":"q01","question":"What evidence is commonly used to evaluate factual faithfulness in generated answers?"}
+{"id":"q02","question":"How is citation precision different from citation recall in an answer-generation system?"}
+{"id":"q03","question":"What are the main limitations of using lexical overlap to judge whether a citation supports a claim?"}
+{"id":"q04","question":"How can retrieval-augmented generation affect factual consistency compared with generation without retrieval?"}
+{"id":"q05","question":"What failure modes remain possible when a language model receives retrieved passages?"}
+{"id":"q06","question":"How do small language models differ from larger models in tool-use reliability?"}
+{"id":"q07","question":"What factors influence whether a small local model can call tools reliably?"}
+{"id":"q08","question":"How can a system distinguish a relevant source from a source that directly supports a claim?"}
+{"id":"q09","question":"What is the role of claim decomposition in citation verification?"}
+{"id":"q10","question":"How can uncertainty be represented when a cited passage only partially supports a claim?"}
+{"id":"q11","question":"What are common causes of unsupported citations in LLM-generated answers?"}
+{"id":"q12","question":"How should an evaluation handle a claim with no citation?"}
+{"id":"q13","question":"What are the risks of asking the same language model to generate and verify an answer?"}
+{"id":"q14","question":"How can verifier calibration be evaluated for evidence-support judgments?"}
+{"id":"q15","question":"What is the difference between entailment and topical similarity for citation checking?"}
+{"id":"q16","question":"How can chunk size affect retrieval quality for research papers?"}
+{"id":"q17","question":"What tradeoffs arise when overlapping text chunks are used for semantic retrieval?"}
+{"id":"q18","question":"How does cosine similarity rank dense text embeddings, and what does it not establish?"}
+{"id":"q19","question":"What are the limitations of embedding-based retrieval for precise numerical facts?"}
+{"id":"q20","question":"How can retrieved evidence be traced back to the original page and passage?"}
+{"id":"q21","question":"What is prompt injection in the context of retrieval-augmented language models?"}
+{"id":"q22","question":"Why should retrieved web-page text be treated as untrusted input?"}
+{"id":"q23","question":"What defenses can reduce prompt-injection risk in a research agent?"}
+{"id":"q24","question":"Why is instruction separation alone not a complete defense against prompt injection?"}
+{"id":"q25","question":"How can a prompt-injection evaluation use a canary without exposing a real secret?"}
+{"id":"q26","question":"What should a research agent do when a source page contains instructions directed at the model?"}
+{"id":"q27","question":"How can a web research agent prevent server-side request forgery when fetching citations?"}
+{"id":"q28","question":"Why should redirects be revalidated when a URL fetcher blocks private addresses?"}
+{"id":"q29","question":"What network behavior should be controlled to make retrieval tests deterministic?"}
+{"id":"q30","question":"How can caching influence reproducibility in a web-search evaluation?"}
+{"id":"q31","question":"What information should an agent trace record for each tool invocation?"}
+{"id":"q32","question":"How can latency be reported alongside answer-quality metrics?"}
+{"id":"q33","question":"What makes an ablation study useful when evaluating retrieval and verification components?"}
+{"id":"q34","question":"How can a baseline configuration isolate the effects of retrieval and verification?"}
+{"id":"q35","question":"What is a suitable unit of analysis for citation-faithfulness evaluation?"}
+{"id":"q36","question":"How should missing ground-truth labels affect reported accuracy metrics?"}
+{"id":"q37","question":"Why should an evaluation distinguish unavailable metrics from zero-valued metrics?"}
+{"id":"q38","question":"How can human annotations support evaluation of factual answer accuracy?"}
+{"id":"q39","question":"What sources of bias can arise when building a benchmark for research assistants?"}
+{"id":"q40","question":"How can question difficulty be stratified in an evaluation of local language models?"}
+{"id":"q41","question":"What is the effect of model quantization on local inference quality and speed?"}
+{"id":"q42","question":"How can local inference reduce privacy exposure in a research workflow?"}
+{"id":"q43","question":"What limitations should be disclosed when a research assistant depends on a local model?"}
+{"id":"q44","question":"How can a local model's embedding quality affect retrieval of scientific evidence?"}
+{"id":"q45","question":"What methods are available to evaluate whether a generated summary preserves source meaning?"}
+{"id":"q46","question":"How can conflicting evidence from multiple sources be represented in a cited answer?"}
+{"id":"q47","question":"How should an agent handle a source that is inaccessible or returns an error?"}
+{"id":"q48","question":"What information should be included in a reproducible report of a language-model experiment?"}
+{"id":"q49","question":"How can citation verification results be inspected at the individual claim level?"}
+{"id":"q50","question":"What open research questions remain about citation faithfulness in small local language models?"}

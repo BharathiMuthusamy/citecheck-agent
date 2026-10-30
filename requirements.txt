@@ -1,0 +1,11 @@
+ollama
+ddgs
+requests
+beautifulsoup4
+numpy
+pydantic>=2,<3
+pytest
+ruff
+streamlit
+pandas
+matplotlib
